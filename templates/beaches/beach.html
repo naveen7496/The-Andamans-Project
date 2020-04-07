@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="island_heading" class="text-center">
+        <h1>{{ beach.title }}</h1>
+    </div>
+
+    <!--Island Gallery Image -->
+
+    <div class="container">
+        <div class="row">
+            <div id="main-img-holder">
+                <img id="main_about" src="{{ beach.photo_main.url }}" style="height: 350px; width: 600px;" alt="about 1">
+            </div>
+        </div>
+        <div class="gallery-div">
+            <div class="row-mb-5 thumbs">
+                <div class="col-md-2">
+                    <a href="{{ beach.photo_1.url }}" data-lightbox="home-images">
+                        <img src="{{ beach.photo_1.url }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="{{ beach.photo_2.url }}" data-lightbox="home-images">
+                        <img src="{{ beach.photo_2.url }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="{{ beach.photo_3.url }}" data-lightbox="home-images">
+                        <img src="{{ beach.photo_3.url }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="{{ beach.photo_4.url }}" data-lightbox="home-images">
+                        <img src="{{ beach.photo_4.url }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Island GAllery Image ends-->
+
+    <!-- Iskand Template Content -->
+
+    <div class="island-spec-details">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="il-details"> Name: {{ beach.name }}</div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="il-details"> Location: {{ beach.location }}</div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="island-content">
+                <p id="il-content-id">{{ beach.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="test">
+        <div class="slider">
+            <div class="slider-images">
+                <div class="image-container"><img class="home_images" src="{% static 'images/home/home_1.jpg' %}" alt="home_1"></div>
+                <div class="image-container"><img class="home_images" src="{% static 'images/home/home_2.jpg' %}" alt="home_2"></div>
+                <div class="image-container"><img class="home_images" src="{% static 'images/home/home_3.jpg' %}" alt="home_3"></div>
+                <div class="image-container"><img class="home_images" src="{% static 'images/home/home_4.jpg' %}" alt="home_4"></div>
+                <div class="image-container"><img class="home_images" src="{% static 'images/home/home_1.jpg' %}" alt="home_1"></div>
+            </div>
+        </div>
+        <div id="test-overlay"></div>
+    </section>
+
+    <!--====================== SLider and overlay ====================================-->
+
+    <div id="test-content" class="text-center">
+        <h1> The <span>Islands</span> that define <span>Beauty</span> </h1>
+    </div>
+
+
+    <div id="test-details" class="text-center">
+        <p> The Andaman and Nicobar Islands is a union territory of India. The islands are in the Indian Ocean, in the southern part of the Bay of Bengal. The archipelago has around 572 islands of which only 36 are open to tourists. Around 4 lakh tourists visit Andamans every year; 15,000 of them are foreigners. The most striking thing about Andaman is its beaches, tucked in the various pristine islands. Radhanagar Beach in Andaman – is one of the best beaches in Andaman. It has been ranked as the best beach of India and the 7th best beach in the world by the Time Magazine.</p>
+    </div>
+
+    {% endblock %}

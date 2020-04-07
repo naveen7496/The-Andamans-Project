@@ -1,0 +1,76 @@
+{% load static %}
+<html lang="en">
+<head>
+    <!-- meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, internal-scale=1">
+
+    <!-- Page Title-->
+    <title> The Andamans</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+    <!-- bootstrap CSS STyling-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Font Awesome styling -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css' %}">
+
+    <!-- Light-box css-->
+    <link rel="stylesheet" href="{% static 'css/lightbox/lightbox.css' %}">
+</head>
+
+<body>
+
+
+    <!-- ===================== Navbar ==============================-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About Andamans</a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Popular
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Havelock Island</a>
+                    <a class="dropdown-item" href="#">Neil Island</a>
+                    <a class="dropdown-item" href="#">Cellular Jail</a>
+                </div>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Featurings
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'island_listing' %}">Islands</a>
+                    <a class="dropdown-item" href="{% url 'beachlistings' %}">Beaches</a>
+                    <a class="dropdown-item" href="{% url 'tribelistings' %}">Tribes</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+     <!--====================== Navbar ends here ================================-->
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Jquery -->
+    <script src="{% static 'javascript/jquery.js' %}"></script>
+
+    <!-- bootstrap. js -->
+    <script src="{% static 'javascript/bootstrap/bootstrap.js' %}"></script>
+
+    <!-- SCript.js  -->
+    <script src="{% static 'javascript/script.js' %}"></script>
+    </body>
+</html>

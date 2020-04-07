@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="tribes-page">
+        <div id="tribes-listings-title" class="text-center">
+            <h1> Tribes</h1>
+        </div>
+
+        {% if tribes %}
+        {% for tribe in tribes %}
+        <!-- Tribe listing 1 -->
+        <div class="container">
+            <div class="tribe-container">
+                <div class="img-container">
+                    <img src="{{ tribe.photo_main.url }}" style="height:240px; width: 350px;">
+                </div>
+                <div class="desc-tribe text-center">
+                    <a href="{% url 'tribe' tribe.id%}">
+                        <p>{{ tribe.name }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+
+
+    </section>
+{% endblock %}

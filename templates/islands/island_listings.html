@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="island-page">
+        <div id="island_listing-title" class="text-center">
+            <h1> Islands</h1>
+        </div>
+
+        {% if islands %}
+        {% for island in islands %}
+        <!-- Island listing 1 -->
+        <div class="container">
+            <div class="island-container">
+                <div class="img-container">
+                    <img src="{{ island.photo_main.url }}" style="height:240px; width: 350px;">
+                </div>
+                <div class="desc-island text-center">
+                    <a href="{% url 'island' island.id %}">
+                        <p>{{ island.name }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>NO islands available.</p>
+        {% endif %}
+    </section>
+{% endblock %}

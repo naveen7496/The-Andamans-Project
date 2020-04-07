@@ -1,0 +1,416 @@
+/*=========== Home slider ================*/
+
+.slider {
+    background-color: red;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    
+    
+}
+.slider-images {
+    position: absolute;
+    background-color: green;
+    width: 500%;
+    height: 100%;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 20s;
+}
+.img-container {
+    width: 800px;
+    background-color: blue;
+    height: 100%;
+    
+}
+
+.home_images {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slider {
+    12.5%
+    {
+        margin-left: -100%;    
+    }
+    25%
+    {
+        margin-left: -100%;    
+    }
+    37.5%
+    {
+        margin-left: -200%;    
+    }
+    50%
+    {
+        margin-left: -200%;    
+    }
+    62.5%
+    {
+        margin-left: -300%;    
+    }
+    75%
+    {
+        margin-left: -300%;    
+    }
+    87.5%
+    {
+        margin-left: -400%;    
+    }
+    100%
+    {
+        margin-left: -400%;    
+    }
+}
+
+/*#home-overlay {
+    background-color: rgb(0,0,0,0.4);
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+=========== Home slider Ends================*/
+
+/*=========== Home Page content ==============
+
+#home-content {
+    z-index: 9999;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    color: antiquewhite;
+    
+}
+
+#home-content h1{
+    font-size: 100px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+#home-content h1 span {
+    font-size: 100px;
+    color: #f0c420;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+
+#home-details {
+    z-index: 9999;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    color: antiquewhite;
+}
+#home-details p {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+    
+
+}
+/*=========== Home Page content Ends ==============*/
+
+/*
+===========================*/
+
+/*=========== Home slider ================*/
+
+.slider {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background-color: pink;
+    overflow: hidden;
+    
+    
+}
+.slider-images {
+    position: absolute;
+    width: 500%;
+    height: 100%;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 20s;
+    background-color: brown;
+}
+.image-container {
+    background-color: blue; 
+    width: 20%;
+    height: 100%;
+    float: left;
+    
+}
+
+
+
+.home_images {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slider {
+    12.5%
+    {
+        margin-left: -100%;    
+    }
+    25%
+    {
+        margin-left: -100%;    
+    }
+    37.5%
+    {
+        margin-left: -200%;    
+    }
+    50%
+    {
+        margin-left: -200%;    
+    }
+    62.5%
+    {
+        margin-left: -300%;    
+    }
+    75%
+    {
+        margin-left: -300%;    
+    }
+    87.5%
+    {
+        margin-left: -400%;    
+    }
+    100%
+    {
+        margin-left: -400%;    
+    }
+}
+
+#test-overlay {
+    background-color: rgb(0,0,0,0.4);
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    
+}
+/*=========== Home slider Ends================*/
+
+/*=========== Home Page content ==============*/
+
+#test-content {
+    z-index: 9999;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    color: antiquewhite;
+    
+}
+
+#test-content h1{
+    font-size: 100px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+#test-content h1 span {
+    font-size: 100px;
+    color: #f0c420;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+
+#test-details {
+    z-index: 9999;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    color: antiquewhite;
+}
+#test-details p {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+
+/*=========== About Page content ==============*/
+
+}
+#main_about {    
+    height: 100%;
+    width: 100%; 
+}
+
+
+
+#aaa{
+    background-color: red;
+    margin-top: 120px;
+    height: 350px;
+    width: 600px;
+    margin-left: 250px;
+}
+
+
+#about-heading {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 700px;
+    right: 0;
+    margin-bottom: 10px;
+    
+}
+
+#about-heading h1{
+    color: #f0c420;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    font-size: 80px;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.col-md-2 {
+    float: left;
+}
+
+.gallery-div {
+    position: absolute;
+    top: 570px;
+    margin-left: 190px;
+}
+.about-content {
+    position: absolute;
+    top: 700px;
+}
+
+/*=========== About Page content Ends ==============*/
+
+/*=========== Islands Page content ==============*/
+
+#island_listing-title h1{
+    color: #f0c420;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    font-size: 70px;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.island-container{
+    height: 250px;
+    width: 350px;
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.img-container{
+    height: 240px;
+    width: 100%;
+}
+
+.desc-island p{
+    background-color: rgb(0,0,0,0.9);
+    font-size: 30px;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    color: white;
+    text-align: center;
+}
+/*=========== Islands Page content Ends ==============*/
+
+/*=========== Tribes Page content ==============*/
+
+#tribes-listings-title h1{
+    color: #f0c420;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    font-size: 70px;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.tribe-container{
+    height: 250px;
+    width: 350px;
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.img-container{
+    height: 240px;
+    width: 100%;
+}
+
+.desc-tribe p{
+    background-color: rgb(0,0,0,0.9);
+    font-size: 30px;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    color: white;
+    text-align: center;
+}
+/*=========== Tribes Page content Ends ==============*/
+
+/*=========== Island Template =======================*/
+
+#island_heading h1{
+    color: #f0c420;
+    font-family: 'Liu Jian Mao Cao', cursive; 
+    font-size: 80px;
+    background-color: rgb(0,0,0,0.8);
+}
+
+#main-img-holder{
+    margin-top: 30px;
+    height: 350px;
+    width: 600px;
+    margin-left: 250px;
+    background-color: blue;
+}
+
+
+.island-spec-details{
+    position: absolute;
+    top: 700px;
+    right: 0;
+    left: 0;
+}
+
+.il-details{
+    font-size: 20px;
+    
+}
+
+.col-md-6{
+    margin-bottom: 20px;
+    
+}
+
+#il-content-id {
+    margin-top: 30px;
+    
+}
+#ce-content-id {
+    margin-top: 50px;
+    
+}
+.bg {
+    margin-top: -10px;
+    background-color: rgb(0,0,0,0.9);
+    height: 580px;
+}
+
+.bg2 {
+    margin-top: -50px;
+    padding-top: 10px;
+    background-color: #f0c420;
+    height: 600px;
+}
+/*=========== Island Template Ends =======================*/
